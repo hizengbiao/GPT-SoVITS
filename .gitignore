@@ -22,3 +22,4 @@ runtime2
 ffmpeg.exe
 ffprobe.exe
 GPT_weights
+tts_infer.yaml
