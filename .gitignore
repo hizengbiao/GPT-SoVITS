@@ -12,3 +12,13 @@ SoVITS_weights
 TEMP
 
 
+
+
+# zb
+gweight.txt
+sweight.txt
+runtime2
+参考音频
+ffmpeg.exe
+ffprobe.exe
+GPT_weights
