@@ -8,7 +8,7 @@
 <img src="https://counter.seku.su/cmoe?name=gptsovits&theme=r34" /><br>
 
 [![Open In Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)](https://colab.research.google.com/github/RVC-Boss/GPT-SoVITS/blob/main/colab_webui.ipynb)
-[![Licence](https://img.shields.io/badge/LICENSE-MIT-green.svg?style=for-the-badge)](https://github.com/RVC-Boss/GPT-SoVITS/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/LICENSE-MIT-green.svg?style=for-the-badge)](https://github.com/RVC-Boss/GPT-SoVITS/blob/main/LICENSE)
 [![Huggingface](https://img.shields.io/badge/🤗%20-Models%20Repo-yellow.svg?style=for-the-badge)](https://huggingface.co/lj1995/GPT-SoVITS/tree/main)
 
 [**English**](../../README.md) | [**中文简体**](../cn/README.md) | [**日本語**](./README.md) | [**한국어**](../ko/README.md)
@@ -39,7 +39,8 @@ https://github.com/RVC-Boss/GPT-SoVITS/assets/129054828/05bee1fa-bdd8-4d85-9350-
 
 - Python 3.9, PyTorch 2.0.1, CUDA 11
 - Python 3.10.13, PyTorch 2.1.2, CUDA 12.3
-- Python 3.9, PyTorch 2.3.0.dev20240122, macOS 14.3 (Apple silicon)
+- Python 3.9, PyTorch 2.2.2, macOS 14.4.1 (Apple silicon)
+- Python 3.9, PyTorch 2.2.2, CPUデバイス
 
 _注記: numba==0.56.4 は py<3.11 が必要です_
 
@@ -59,7 +60,9 @@ bash install.sh
 
 **注：MacでGPUを使用して訓練されたモデルは、他のデバイスで訓練されたモデルと比較して著しく品質が低下するため、当面はCPUを使用して訓練します。**
 
-まず、`brew install ffmpeg`または`conda install ffmpeg`を実行してFFmpegをインストールしたことを確認してください。次に、以下のコマンドを使用してインストールします：
+1. `xcode-select --install` を実行して、Xcodeコマンドラインツールをインストールします。
+2. `brew install ffmpeg` または `conda install ffmpeg` を実行して、FFmpegをインストールします。
+3. 上記の手順を完了した後、以下のコマンドを実行してこのプロジェクトをインストールします。
 
 ```bash
 conda create -n GPTSoVits python=3.9
@@ -156,7 +159,7 @@ D:\GPT-SoVITS\xxx/xxx.wav|xxx|en|I like playing Genshin.
 - [ ] **優先度 高:**
 
   - [x] 日本語と英語でのローカライズ。
-  - [] ユーザーガイド。
+  - [ ] ユーザーガイド。
   - [x] 日本語データセットと英語データセットのファインチューニングトレーニング。
 
 - [ ] **機能:**
