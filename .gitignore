@@ -1,4 +1,5 @@
 .DS_Store
+.vscode
 __pycache__
 *.pyc
 env
@@ -9,17 +10,19 @@ logs
 reference
 GPT_weights
 SoVITS_weights
-TEMP
-
-
 
 
 # zb
 gweight.txt
 sweight.txt
 runtime2
+
 参考音频
 ffmpeg.exe
 ffprobe.exe
 GPT_weights
 tts_infer.yaml
+GPT_weights_v2
+SoVITS_weights_v2
+TEMP
+weight.json
