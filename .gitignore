@@ -18,6 +18,8 @@ TEMP
 gweight.txt
 sweight.txt
 runtime2
+GPT_SoVITS/text
+
 参考音频
 ffmpeg.exe
 ffprobe.exe
